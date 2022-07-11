@@ -19,7 +19,7 @@
             console.log(response);
             const data = await response.json();
             console.log(data);
-            //document.querySelector('#name').textContent = text;
+            document.querySelector('#name').textContent = data.text;
         }())
     </script>
 </body>
