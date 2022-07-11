@@ -1,0 +1,40 @@
+#################### default parameters ################################
+logo: images/logo.png
+description: Some Description
+author: Thomas
+
+# Preloader
+preloader:
+  enable: false
+  preloader: "" # use jpg, png, svg or gif format.
+  
+############################# social site ########################
+social:
+  - name: facebook
+    icon: ti-facebook # themify icon : https://themify.me/themify-icons
+    link: "#"
+
+  - name: github
+    icon: ti-github # themify icon : https://themify.me/themify-icons
+    link: "#"
+
+  - name: linkedin
+    icon: ti-linkedin # themify icon : https://themify.me/themify-icons
+    link: "#"
+
+############################# Plugins ##############################
+
+# CSS Plugins
+plugins:
+  css:
+    - link: "plugins/bootstrap/bootstrap.min.css"
+    - link: "plugins/themify-icons/themify-icons.css"
+    - link: "plugins/slick/slick.css"
+    - link: "plugins/slick/slick-theme.css"
+    - link: "plugins/aos/aos.css"
+  js:
+    - link: "plugins/jQuery/jquery.min.js"
+    - link: "plugins/bootstrap/bootstrap.min.js"
+    - link: "plugins/slick/slick.min.js"
+    - link: "plugins/shuffle/shuffle.min.js"
+    - link: "plugins/aos/aos.js"

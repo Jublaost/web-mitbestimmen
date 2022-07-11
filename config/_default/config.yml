@@ -1,0 +1,18 @@
+######################## default configuration ####################
+baseURL: /
+title: jublaost-mitbestimmen
+theme: hugo-theme-copper
+paginate: 6
+summaryLength: 10
+appinsights_instrumentationkey: ""
+defaultContentLanguage: de
+disableLanguages:
+  - en # desable language from here
+outputs:
+  home:
+    - HTML
+    - RSS
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

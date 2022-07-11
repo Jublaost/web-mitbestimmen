@@ -1,0 +1,6 @@
+.gitmodules
+.vscode
+resources
+api/dist
+api/node_modules
+api/local.settings.json
