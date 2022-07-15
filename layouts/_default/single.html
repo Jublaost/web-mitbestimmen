@@ -15,7 +15,7 @@
         </div>
         <hr>
         <div class="row justify-content-center">
-            <form class="col-8" id="form-{{.Title}}">
+            <form class="col-8" id="form">
                 <div class="form-group mb-30">
                     <label class="text-black-200 h5 font-weight-600 mb-2" for="email">Email<strong
                             style="color: darkred;">*</strong></label>
@@ -33,8 +33,18 @@
                         </optgroup>
                     </select>
                 </div>
-                <button class="btn btn-primary">Abstimmen</button>
+                <button class="g-recaptcha btn btn-primary" data-sitekey="6Le_K_MgAAAAAALWoPR1Me3R3mQAYfNib8LpWIVp"
+                    data-callback='onSubmit' data-action='submit'>Abstimmen</button>
             </form>
+            <div id="success-message" style="display: none">
+                <h3>Vielen Dank!</h3>
+                <p>...</p>
+            </div>
+            <div id="error-message" style="display: none">
+                <h3>Ups!</h3>
+                <p style="color: darkred;">Leider hat etwas nicht geklappt.. Bitte melde dich bei Thomas von Mentlen<a
+                        href="mailto:thomas.vonmentlen@jublaost.ch">thomas.vonmentlen@jublaost.ch</a></p>
+            </div>
         </div>
     </div>
 

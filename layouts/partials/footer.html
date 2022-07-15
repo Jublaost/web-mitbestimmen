@@ -44,6 +44,8 @@
 {{ $script := resources.Get "js/custom.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
 
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
 <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
 <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js"
   charset="UTF-8"></script>
