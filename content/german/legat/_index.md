@@ -4,4 +4,4 @@ description: Abstimmung Legat
 
 ---
 
-Hello World!
+Coming Soon!

@@ -1,0 +1,55 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<!-- start footer -->
+<footer class="bg-light-gray has-shapes has-bg-brash bg-brash-top "
+  style="background-image: url('{{`images/brushes/footer.svg` | absURL}}')">
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="copyright" class="block border-top text-center content">{{site.Params.copyright | markdownify}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shape-1 shape-xs bg-orange rounded-circle"></div>
+  <div class="shape-2 shape-sm-2 bg-cyan rounded-circle"></div>
+  <div class="shape-3 shape-sm bg-yellow rounded-circle"></div>
+  <div class="shape-4 shape-xs-2 bg-cyan rounded-circle"></div>
+  <div class="shape-5 shape-sm-2 bg-yellow rounded-circle"></div>
+  <div class="shape-6 shape-sm-2 bg-orange rounded-circle"></div>
+</footer>
+<!-- end footer -->
+
+<!-- strat scroll to top -->
+<a href="#top" class="btn btn-primary scroll-to-top-btn smooth-scroll position-fixed"><svg
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+    <path id="Layer" fill="currentColor"
+      d="M7.2 19.2L15.2 11.2C15.68 10.71 16.43 10.68 16.96 11.08L17.08 11.2L25.08 19.2L23.2 21.08L16.14 14.02L9.08 21.08L7.2 19.2Z" />
+  </svg></a>
+<!-- end scroll to top -->
+
+{{ range .Site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
+
+{{ $script := resources.Get "js/script.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+
+{{ $script := resources.Get "js/mytheme.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+
+{{ $script := resources.Get "js/custom.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+
+<!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+<script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js"
+  charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+  document.addEventListener('DOMContentLoaded', function () {
+    cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "implied", "palette": "light", "language": "{{ .Site.Language.Lang }}", "page_load_consent_levels": ["strictly-necessary", "functionality", "tracking", "targeting"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false });
+  });
+</script>
+<!-- End Cookie Consent -->

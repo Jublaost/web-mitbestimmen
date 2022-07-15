@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<section id="content" class="section-padding has-shapes">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="content text-center">
+                {{ .Content }}
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <form class="col-8" id="form-{{.Title}}">
+                <div class="form-group mb-30">
+                    <label class="text-black-200 h5 font-weight-600 mb-2" for="email">Email<strong
+                            style="color: darkred;">*</strong></label>
+                    <input class="form-control shadow-none" type="email" placeholder="email@wascooles.com" id="email"
+                        name="email" required>
+                </div>
+                <div class="form-group mb-30">
+                    <label class="text-black-200 h5 font-weight-600 mb-2" for="stimmme">Deine Stimme<strong
+                            style="color: darkred;">*</strong></label>
+                    <select class="form-control shadow-none" id="stimme" name="stimme" required>
+                        {{ with .Parent }}
+                        <optgroup label="{{ .Title }}">
+                            {{ end }}
+                            <option value="{{.Title}}" selected>{{.Title}}</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <button class="btn btn-primary">Abstimmen</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="shape-1 shape-sm bg-secondary rounded-circle"></div>
+    <div class="shape-2 shape-sm-2 bg-primary rounded-circle"></div>
+    <div class="shape-3 shape-sm bg-secondary rounded-circle"></div>
+    <div class="shape-4 shape-sm-2 bg-tertiary rounded-circle"></div>
+</section>
+
+{{ end }}

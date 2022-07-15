@@ -5,7 +5,9 @@
     <div class="row d-flex align-items-center h-100">
       <div class="col-md-12 text-center">
         <h2 class="h1 font-weight-bold">{{.Title }}</h2>
-        <p>{{ .Description }}</p>
+        <p>{{ with .Parent }}
+          {{ .Title }}
+          {{ end }}</p>
       </div>
     </div>
   </div>
