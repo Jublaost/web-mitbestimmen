@@ -4,7 +4,7 @@ title: jublaost-mitbestimmen
 theme: hugo-theme-copper
 paginate: 6
 summaryLength: 10
-appinsights_instrumentationkey: ""
+appinsights_instrumentationkey: "16cafa35-2130-46e1-8055-06498a8476d8"
 defaultContentLanguage: de
 disableLanguages:
   - en # desable language from here
