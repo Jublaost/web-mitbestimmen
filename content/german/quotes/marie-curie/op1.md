@@ -1,7 +1,7 @@
 ---
-title: Superman-Schlafanzüge
+title: verstehen
 description: 
 
 ---
 
-Kinder tragen nachts Superman-Schlafanzüge. Superman trägt nachts einen Chuck Norris Schlafanzug.
+Man braucht nichts im Leben zu fürchten, man muss nur alles verstehen.

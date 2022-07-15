@@ -1,7 +1,7 @@
 ---
-title: verstehen
+title: Schlafanzug
 description: 
 
 ---
 
-Man braucht nichts im Leben zu fürchten, man muss nur alles verstehen.
+Kinder tragen nachts Superman-Schlafanzüge. Superman trägt nachts einen Chuck Norris Schlafanzug.

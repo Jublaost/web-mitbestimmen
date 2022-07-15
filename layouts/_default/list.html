@@ -12,7 +12,8 @@
             {{ range .Pages }}
             <div class="col-lg-4 col-md-9 mb-40">
                 <h2>{{ .Title }}</h2>
-                <p>{{.Description }} </p>
+                <div>{{ .Content }}</div>
+                <br>
                 <ol>
                     {{ range .Pages }}
                     <a href="{{ .Permalink }}">
