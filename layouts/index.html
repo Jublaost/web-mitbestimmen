@@ -1,27 +1,35 @@
-<!DOCTYPE html>
-<html lang="de">
+{{ define "main" }}
+<section class="page-header bg-light-gray has-shapes has-bg-brash bg-brash-bottom"
+    style="background-image:url('{{`images/brushes/banner.svg` | absURL}}')">
+    <div class="container h-100">
+        <div class="row d-flex align-items-center h-100">
+            <div class="col-md-12 text-center">
+                <h2 class="h1 font-weight-bold">Mitbestimmen</h2>
+            </div>
+        </div>
+    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript App</title>
-</head>
+    <div class="shape-1 bg-secondary shape-xs rounded-circle"></div>
+    <div class="shape-2 bg-primary shape-xs-2 rounded-circle"></div>
+    <div class="shape-3 bg-primary shape-sm-2 rounded-circle"></div>
+    <div class="shape-4 bg-tertiary shape-xs rounded-circle"></div>
+    <div class="shape-5 bg-tertiary shape-xs rounded-circle"></div>
+    <div class="shape-6 bg-primary shape-sm rounded-circle"></div>
+    <div class="shape-7 bg-primary shape-xs-2 rounded-circle"></div>
+    <div class="shape-8 bg-secondary shape-xs rounded-circle"></div>
+</section>
 
-<body>
-    <main>
-        <h1>JavaScript App</h1>
-        <p>Loading content from the API: <b id="name">...</b></p>
-    </main>
-
-    <script>
-        (async function () {
-            const response = await fetch("/api/HttpTest");
-            console.log(response);
-            const data = await response.json();
-            console.log(data);
-            document.querySelector('#name').textContent = data.text;
-        }())
-    </script>
-</body>
-
-</html>
+<section class="section-padding has-shapes">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="content text-center">
+                <h2>Jetzt mitbestimmen</h2>
+                <a href="/quotes"><button class="btn btn-primary">Sprüche</button></a>
+                <hr>
+                <p>Coming soon!</p>
+                <a href="/legat"><button class="btn btn-primary" disabled>Legat</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
