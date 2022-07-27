@@ -17,34 +17,36 @@ function onSubmit(token) {
 
 let form = document.getElementById("form");
 if (form) {
-    form.onsubmit = function (event) {
+    form.onsubmit = (event) => {
+        console.log(event)
         event.preventDefault(); // Don't let the browser submit the form.
         var payload = {};
 
         // Build JSON key-value pairs using the form fields.
-        form.querySelectorAll("input, textarea").forEach(field => {
+        form.querySelectorAll("input, select").forEach(field => {
             payload[field.name] = field.value;
         });
 
         console.log(payload)
 
-        if (payload["g-recaptcha-response"].length == 0) {
-            recaptchaMessage.style.display = "block";
-        } else {
-            // Post the payload to the contact endpoint.
-            fetch("/api/PostStimme", {
-                method: 'post',
-                body: JSON.stringify(payload)
-            }).then(resp => {
-                if (!resp.ok) {
-                    console.error(resp);
-                    return;
-                }
-                // Display success message.
-                recaptchaMessage.style.display = "none";
-                successMessage.style.display = "block";
-                form.style.display = "none";
+        grecaptcha.ready(() => {
+            grecaptcha.execute('6Le_K_MgAAAAAALWoPR1Me3R3mQAYfNib8LpWIVp', { action: 'submit' }).then((token) => {
+                payload['g-recaptcha-response'] = token;
+                console.log("recaptcha successful", token);
+                fetch("https://web-mitbestimmen.azurewebsites.net/api/PostVote", {
+                    method: 'post',
+                    body: JSON.stringify(payload)
+                }).then(resp => {
+                    console.log(resp)
+                    if (!resp.ok) {
+                        console.error(resp);
+                        return;
+                    }
+                    // Display success message.
+                    successMessage.style.display = "block";
+                    form.style.display = "none";
+                });
             });
-        }
+        });
     }
 }
