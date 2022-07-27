@@ -23,10 +23,14 @@ if (form) {
         var payload = {};
 
         // Build JSON key-value pairs using the form fields.
-        form.querySelectorAll("input, select").forEach(field => {
+        form.querySelectorAll("input").forEach(field => {
             payload[field.name] = field.value;
         });
-
+        form.querySelectorAll("select").forEach(field => {
+            let value = field.value.split(";")
+            payload["category"] = value[0];
+            payload["option"] = value[1];
+        });
         console.log(payload)
 
         grecaptcha.ready(() => {
