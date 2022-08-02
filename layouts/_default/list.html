@@ -27,6 +27,7 @@
         <hr>
         <div class="row justify-content-center">
             <form class="col-8" id="form">
+                <input type="hidden" id="vote" name="vote" value="{{ .Params.id }}" required>
                 <div class=" form-group mb-30">
                     <label class="text-black-200 h5 font-weight-600 mb-2" for="email">Email<strong
                             style="color: darkred;">*</strong></label>
@@ -53,9 +54,13 @@
                 <h3>Vielen Dank!</h3>
                 <p>...</p>
             </div>
+            <div id="retry-message" style="display: none">
+                <h3>Bereits abgestimmt!</h3>
+                <p style="color: darkred;">Mit dieser Mailadresse wurde bereits abgestimmt.</p>
+            </div>
             <div id="error-message" style="display: none">
                 <h3>Ups!</h3>
-                <p style="color: darkred;">Leider hat etwas nicht geklappt.. Bitte melde dich bei Thomas von Mentlen<a
+                <p style="color: darkred;">Leider hat etwas nicht geklappt.. Bitte melde dich bei Thomas von Mentlen <a
                         href="mailto:thomas.vonmentlen@jublaost.ch">thomas.vonmentlen@jublaost.ch</a></p>
             </div>
         </div>

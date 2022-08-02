@@ -1,7 +1,8 @@
 ---
-title: Spüche
+id: quotes
+title: Sprüche & Zitate
 description: Abstimmung Spüche
 
 ---
 
-Stimme jeztzt über das beste Zitat / den besten Spruch ab!
+Stimme jetzt über das beste Zitat / den besten Spruch ab!
