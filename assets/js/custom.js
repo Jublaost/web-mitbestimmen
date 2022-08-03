@@ -23,6 +23,9 @@ let errorMessage = document.getElementById("error-message");
 if (form) {
     form.onsubmit = (event) => {
         console.log(event)
+
+        form.getElementsByTagName("button")[0].disabled = true;
+
         event.preventDefault(); // Don't let the browser submit the form.
         var payload = {};
 
