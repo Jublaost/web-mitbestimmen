@@ -13,15 +13,19 @@
         </div>
         <div class="row">
             {{ range .Pages }}
-            <div class="col-lg-4 col-md-9 mb-40">
+            <div class="col-xl-3 col-lg-6 col-md-9 mb-40">
                 <h2>{{ .Title }}</h2>
                 <div>{{ .Content }}</div>
                 <br>
                 <ol>
                     {{ range .Pages }}
+                    {{ if gt (len .Content) 0 }}
                     <a href="{{ .Permalink }}">
                         <li>{{ .Title }}</li>
                     </a>
+                    {{ else }}
+                    <li>{{ .Title }}</li>
+                    {{ end }}
                     {{ end }}
                 </ol>
             </div>
@@ -37,6 +41,16 @@
                     <input class="form-control shadow-none" type="email" placeholder="email@wascooles.com" id="email"
                         name="email" required>
                 </div>
+                {{ if .Params.additional_textinputs }}
+                {{ range .Params.additional_textinputs }}
+                <div class=" form-group mb-30">
+                    <label class="text-black-200 h5 font-weight-600 mb-2" for="{{ . }}">{{ . }}<strong
+                            style="color: darkred;">*</strong></label>
+                    <input class="form-control shadow-none" type="text" placeholder="{{ . }}" id="{{ . }}"
+                        name="{{ . }}" required>
+                </div>
+                {{ end }}
+                {{ end }}
                 <div class="form-group mb-30">
                     <label class="text-black-200 h5 font-weight-600 mb-2" for="stimmme">Deine Stimme<strong
                             style="color: darkred;">*</strong></label>
