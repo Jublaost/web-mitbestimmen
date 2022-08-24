@@ -1,7 +1,5 @@
 ---
-title: Verschiedene XXL-Games
+title: Verschiedene XXL-Games (z.B. zweiter Erdball, Jenga, Vier Gewinnt, Mikado)
 description: 
 
 ---
-
-z.B. zweiter Erdball, Jenga, Vier Gewinnt, Mikado

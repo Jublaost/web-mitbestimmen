@@ -1,7 +1,5 @@
 ---
-title: Jubla Feuerschale
+title: Jubla Feuerschale (Beteiligung Schar 100.-)
 description: 
 
 ---
-
-Beteiligung Schar 100.-
