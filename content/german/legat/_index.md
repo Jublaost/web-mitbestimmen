@@ -15,4 +15,4 @@ Wir haben vier Themenfelder aufgelistet. Wählt ein Themenfeld aus und stimmt f�
 
 Unten sind die verschiedenen Möglichkeiten aufgelistet. Lest zuerst alle Beschriebe genau durch, wählt dann euren Favoriten aus. Bestimme mit, indem ihr ganz unten eure Option anwählt.
 
-Alle Leitenden dürfen einmal an der Umfrage teilnehmen. Bitte die Umfrage bis zum 4. September ausfüllen. Die Kalei wertet im Anschluss die Resultate aus. Ihr erfahrt bis Ende Oktober, welcher Vorschlag gewonnen hat und umgesetzt wird.
+Alle Leitenden dürfen einmal an der Umfrage teilnehmen. Bitte die Umfrage bis zum 7. September ausfüllen. Die Kalei wertet im Anschluss die Resultate aus. Ihr erfahrt bis Ende Oktober, welcher Vorschlag gewonnen hat und umgesetzt wird.
