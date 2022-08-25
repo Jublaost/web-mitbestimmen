@@ -13,6 +13,6 @@ Darum seid ihr gefragt: Welche Idee soll die Kantonsleitung im Jahr 2023 umsetze
 
 Wir haben vier Themenfelder aufgelistet. Wählt ein Themenfeld aus und stimmt für einen konkreten Vorschlag ab.
 
-Unten sind die verschiedenen Möglichkeiten aufgelistet. Lest zuerst alle Beschriebe genau durch, wählt euren Favoriten aus. Gebt eure Stimme ab, indem ihr ganz unten eure Option anwählt.
+Unten sind die verschiedenen Möglichkeiten aufgelistet. Lest zuerst alle Beschriebe genau durch, wählt dann euren Favoriten aus. Bestimme mit, indem ihr ganz unten eure Option anwählt.
 
-Alle Leiter*innen dürfen einmal an der Umfrage teilnehmen. Bitte die Umfrage bis zum 4. September ausfüllen. Die Kalei wertet im Anschluss die Resultate aus. Ihr erfährt bis Ende Oktober, welcher Vorschlag gewonnen hat und umgesetzt wird.
+Alle Leitenden dürfen einmal an der Umfrage teilnehmen. Bitte die Umfrage bis zum 4. September ausfüllen. Die Kalei wertet im Anschluss die Resultate aus. Ihr erfahrt bis Ende Oktober, welcher Vorschlag gewonnen hat und umgesetzt wird.
