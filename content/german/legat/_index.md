@@ -4,6 +4,7 @@ title: Wie können wir deiner Schar eine Freude machen?
 description: Abstimmung Legat
 additional_textinputs:
 - Schar
+active: false
 
 ---
 
